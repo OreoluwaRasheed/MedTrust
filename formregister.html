@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/eaf93db9ac.js" crossorigin="anonymous"></script>
+  <title>MedTrust Register Page</title>
+</head>
+
+<body>
+  <div class="body_container">
+    <div class="form_container">
+      <div class="left_container">
+        <div class="left_container_text">
+          <h2>Welcome to MedTrust</h2>
+          <p>
+            Ensuring Patient Safety with Our Medication Authentication
+            Platform
+          </p>
+          <!-- <img src="images/rightsidebackground.png" alt=""> -->
+        </div>
+      </div>
+      <div class="forms_right_container">
+        <div class="content">
+          <div class="top_nav">
+            <div class="back">
+              <i class="fa-solid fa-caret-left"></i>
+              <span class="topnav_item">Back</span>
+            </div>
+            <div class="skip">
+              <span class="topnav_item">Skip</span>
+              <i class="fa-solid fa-caret-right"></i>
+            </div>
+          </div>
+          <h1>Register</h1>
+
+          <div class="line-container">
+            <div class="line">
+              <div id="line1" class="coloured"></div>
+              <div id="line2"></div>
+              <div id="line3"></div>
+              <div id="line4"></div>
+            </div>
+            <h4>1/4</h4>
+          </div>
+          <form id="register-form">
+            <div class="input_group">
+              <div class="input_field">
+                <label for="user">Enter Your Full Name</label>
+                <input type="text" placeholder="Enter Full Name" name="user" id="user" required />
+              </div>
+              <div class="input_field input_email">
+                <label for="email">Enter Your Email</label>
+                <input type="text" placeholder="Enter Email" name="email" id="email" required />
+              </div>
+              <div class="input_field input_password">
+                <label for="password"> Enter Your Password</label>
+                <input type="password" placeholder="Enter password" name="password" id="password" required />
+                <i class="fa fa-eye"></i>
+              </div>
+              <div class="input_field input_password">
+                <label for="password">Confirm Your Password</label>
+                <input type="password" placeholder="Enter password" name="password" id="password" required />
+                <i class="fa fa-eye"></i>
+              </div>
+              <!-- <div class="dropdown">
+                            <label for="profession">Profession</label>
+                            <input type="text" placeholder="Select">
+                            <i class="fa-solid fa-caret-down"></i>
+                            <div class="dropdown-content">
+                              <a href="#">Health Practitioner</a>
+                              <a href="#">Patient</a>
+                              <a href="#">Others</a>
+                            </div>
+                        </div> -->
+              <div class="input_field input_field2">
+                <label for="role">Role</label>
+                <select name="" id="role">
+                  <option value="" disabled selected>Select</option>
+                  <option value="">Patient</option>
+                  <option value="">Individual</option>
+                  <option value="">Accountant</option>
+                  <option value="">Baker</option>
+                  <option value="">Care manager</option>
+                  <option value="">Dentist</option>
+                  <option value="">Doctor</option>
+                  <option value="">Educator</option>
+                  <option value="">financial anlayst</option>
+                  <option value="">Geographer</option>
+                  <option value="">Hospitalist</option>
+                  <option value="">Investigator</option>
+                  <option value="">Journalist</option>
+                  <option value="">Lab scientist</option>
+                  <option value="">Mechanic</option>
+                  <option value="">Midwife</option>
+                  <option value="">Nurse</option>
+                  <option value="">OPtician</option>
+                  <option value="">professor</option>
+                  <option value="">Pharmacist</option>
+                  <option value="">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="btn_container">
+              <button class="btn_signin btn" type="submit">Register</button>
+              <!-- <button class="btn"type="submit">Sign in with google</button> -->
+            </div>
+            <!-- <div class="remember_forgot">
+                        <label><input type="checkbox">Remember Me</label>
+                        <a href="#">Forgot password?</a>
+                    </div> -->
+            <div class="register_link">
+              <p>
+                Already have an account? <a href="signin.html">Sign In</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyC4a8PtVhjjyLaWLKOHh4qmeSnK-akUVyo",
+      authDomain: "capstone-61bd7.firebaseapp.com",
+      projectId: "capstone-61bd7",
+      storageBucket: "capstone-61bd7.appspot.com",
+      messagingSenderId: "546548642434",
+      appId: "1:546548642434:web:b26fbe8f7cbbb5202c3a9b",
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script>
+    document
+      .getElementById("register-form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        firebase
+          .auth()
+          .createUserWithEmailAndPassword(email, password)
+          .then(function (userCredential) {
+            // Send email verification
+            return userCredential.user.sendEmailVerification();
+          })
+          .then(function () {
+            // Redirect to verification page
+            window.location.href = "verification.html";
+          })
+          .catch(function (error) {
+            console.error(error.message);
+          });
+      });
+  </script>
+</body>
+
+</html>

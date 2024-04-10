@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>MedTrust Settings </title>
+</head>
+
+<body>
+    <header>
+        <nav class="snav_bar">
+            <div class="logo">
+                <img src="./images/MedTrustlogo_withtext.png" alt="logo">
+            </div>
+            <div class="right_nav">
+                <div class="nav_search">
+                    <form action="">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <input type="text" name="" id="search" placeholder="     Search...">
+                    </form>
+                </div>
+                <div class="notify">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                </div>
+                <div class="profile_icon"><img src="images/profile_icon.png" alt="profile icon"></div>
+            </div>
+        </nav>
+    </header>
+    <section class="container_content">
+        <section class="side_nav">
+            <div class="inner_sidenav">
+                <div class="main_menu">
+                    <!-- <h4>Main Menu</h4> -->
+                    <ul>
+                        <li>MAIN MENU</li>
+                        <li><i class="fa fa-home" aria-hidden="true"></i> <a href="#">Home</a></li>
+                        <li><i class="fa fa-search" aria-hidden="true"></i> <a href="#">Search</a></li>
+                        <li><i class="fa fa-qrcode" aria-hidden="true"></i></i> <a href="#">Scan</a></li>
+                        <li><i class="fa fa-bell" aria-hidden="true"></i><a href="#">Notification</a></li>
+                        <li><i class="fa fa-newspaper-o" aria-hidden="true"></i></i> <a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="divide"></div>
+            <div class="inner_sidenav">
+                <div class="preferences">
+                    <ul>
+                        <li>PREFERENCES</li>
+                        <li class="active"><i class="fa fa-cog" aria-hidden="true"></i> <a href="#">Settings</a></li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> <a href="#">Help Center</a></li>
+                        <li><i class="fa fa-sign-out" aria-hidden="true"></i></i> <a href="#">Log out</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <section class="right_container">
+            <section class="home_setting">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                    <li><a href="#">Setting</a></li>
+                </ul>
+            </section>
+            <h3>Settings</h3>
+            <section class="profile_nav">
+
+                <div class="tabs">
+                    <p class="active"><a href="#">My Profile</a></p>
+                    <p><a href="#">Theme & Apperance</a></p>
+                    <p><a href="#">Account Setting</a></p>
+                    <p><a href="#">Notification</a></p>
+
+                </div>
+                <!-- <div class="tabs">
+                        <p class="active"><a href="#" >My Profile</a></p>
+                        <p><a href="#">Theme & Apperance</a></p>
+                        <p><a href="#">Account Setting</a></p>
+                        <p><a href="#">Notification</a></p>
+                    
+                   </div> -->
+            </section>
+            <!-- <div class="line-container">
+                <div class="line">
+                    <div id="line1"></div>
+                    <div id="line2"></div>
+                    <div id="line3"></div>
+                    <div id="line4"></div>
+                </div>
+            </div> -->
+            <h2 class="profile_pic">Profile Picture</h2>
+            <section class="profile_area">
+                <div class="profile_img"><img src="images/profile_image.png" alt=""></div>
+                <div class="profile_btn">
+                    <a href="#" class="btn_edit">Edit Profile Picture</a>
+                    <a href="#">Use Avatar</a>
+                </div>
+                <div class="delete">
+                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                </div>
+            </section>
+            <section class="profile_info">
+                <h2 class="p_info">Profile Information</h2>
+                <div class="profile_name">
+                    <form action="/redister" method="get">
+                        <div class="input_group profile_group">
+                            <div class="input_field">
+                                <label for="user">Full Name</label>
+                                <input type="text" placeholder="Enter Your Full Name" name="user" id="user" required>
+                            </div>
+                            <div class="input_field input_field2">
+                                <label for="user">Username</label>
+                                <input type="text" placeholder="Enter your username" name="user" id="user" required>
+                            </div>
+                        </div>
+                        <div class="input_group profile_group">
+                            <div class="input_field">
+                                <label for="gender">Gender</label>
+                                <select name="" id="role">
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="">Male</option>
+                                    <option value="">Female</option>
+                                </select>
+                            </div>
+                            <div class="input_field input_field2">
+                                <label for="role">Role</label>
+                                <select name="" id="role">
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="">Patient</option>
+                                    <option value="">Individual</option>
+                                    <option value="">Accountant</option>
+                                    <option value="">Baker</option>
+                                    <option value="">Care manager</option>
+                                    <option value="">Dentist</option>
+                                    <option value="">Doctor</option>
+                                    <option value="">Educator</option>
+                                    <option value="">financial anlayst</option>
+                                    <option value="">Geographer</option>
+                                    <option value="">Hospitalist</option>
+                                    <option value="">Investigator</option>
+                                    <option value="">Journalist</option>
+                                    <option value="">Lab scientist</option>
+                                    <option value="">Mechanic</option>
+                                    <option value="">Midwife</option>
+                                    <option value="">Nurse</option>
+                                    <option value="">OPtician</option>
+                                    <option value="">professor</option>
+                                    <option value="">Pharmacist</option>
+                                    <option value="">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="profile_info">
+                <h2 class="p_info" style="margin-top: 50px;">Location</h2>
+                <div class="profile_name">
+                    <form action="/redister" method="get">
+                        <div class="input_group profile_group">
+                            <div class="input_field">
+                                <label for="user">Home Address</label>
+                                <input type="text" placeholder="Enter Your Home Address" name="user" id="user" required>
+                            </div>
+                            <div class="input_field input_field2">
+                                <label for="user">LGA</label>
+                                <input type="text" placeholder="Enter your local government area" name="user" id="user"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="input_group profile_group">
+                            <div class="input_field">
+                                <label for="gender">Country</label>
+                                <select name="" id="role">
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="">Nigeria</option>
+                                    <option value="">Cameroon</option>
+                                    <option value="">South Africa</option>
+                                    <option value="">Ethopia</option>
+                                    <option value="">Senegal</option>
+                                    <option value="">Gambia</option>
+                                </select>
+                            </div>
+                            <div class="input_field input_field2">
+                                <label for="role">State</label>
+                                <select name="" id="role">
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="">Lagos</option>
+                                    <option value="">Abuja</option>
+                                    <option value="">Ogun</option>
+                                    <option value="">Oyo</option>
+                                    <option value="">Port Harcourt</option>
+                                    <option value="">Osun</option>
+                                    <option value="">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <div class="profile_btn btn_save">
+                <a href="#">Reset</a>
+                <a href="#" class="btn_edit">Save Changes</a>
+            </div>
+        </section>
+
+
+    </section>
+
+
+</body>
+
+</html>
