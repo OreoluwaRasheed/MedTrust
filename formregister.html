@@ -33,10 +33,10 @@
               <i class="fa-solid fa-caret-left"></i>
               <span class="topnav_item">Back</span>
             </div>
-            <div class="skip">
+            <!-- <div class="skip">
               <span class="topnav_item">Skip</span>
               <i class="fa-solid fa-caret-right"></i>
-            </div>
+            </div> -->
           </div>
           <h1>Register</h1>
 
@@ -62,12 +62,12 @@
               <div class="input_field input_password">
                 <label for="password"> Enter Your Password</label>
                 <input type="password" placeholder="Enter password" name="password" id="password" required />
-                <i class="fa fa-eye"></i>
+                <i class="fa fa-eye-slash" id="hide-password"></i>
               </div>
               <div class="input_field input_password">
                 <label for="password">Confirm Your Password</label>
                 <input type="password" placeholder="Enter password" name="password" id="password" required />
-                <i class="fa fa-eye"></i>
+                <i class="fa fa-eye-slash" id="hide-password"></i>
               </div>
               <!-- <div class="dropdown">
                             <label for="profession">Profession</label>
@@ -117,7 +117,7 @@
                     </div> -->
             <div class="register_link">
               <p>
-                Already have an account? <a href="signin.html">Sign In</a>
+                Already have an account? <a href="formsignin.html">Sign In</a>
               </p>
             </div>
           </form>
@@ -125,6 +125,7 @@
       </div>
     </div>
   </div>
+
 
   <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
@@ -165,6 +166,8 @@
           });
       });
   </script>
+  <script src="script.js"></script>
+
 </body>
 
 </html>
