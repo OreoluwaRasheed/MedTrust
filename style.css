@@ -162,8 +162,60 @@ a{
   color: #c1c1c1;
   right: 10px;
   top: 60%;
+  cursor: pointer;
   /* transform: translate(-50%); */
   font-size: 20px;
+}
+.password_checklist{
+  position: absolute;
+  top: calc(100% );
+  left: 0;
+  width: 90%;
+  margin: 1rem;
+  padding: 20px 30px;
+  background: #c1c1c1;
+  border-radius: 10px;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: .5s ease;
+}
+#password:focus ~ .password_checklist{
+  opacity: 1;
+  transform: translateY(0);
+}
+.checklist_title{
+  font-size: 15px;
+  margin-left: 5px;
+  color: #1A1A1A;
+  margin-bottom: 10px;
+}
+.checklist{
+  list-style: none;
+}
+.list-item{
+  padding: 5px 5px 5px 35px;
+  color: #1a1a1a;
+  margin-left: 5px;
+  font-size: 14px;
+}
+.list-item::before{
+  content: '\f00d';
+  font-family: FontAwesome;
+  margin: 8px 0;
+  padding-right: 10px;
+  margin-left: -30px;
+  width: 200px;
+  font-size: 12px;
+}
+
+.list-item.checked{
+  opacity: 0.5;
+}
+.list-item.checked::before{
+  content: '\f00c';
+  color: #00B7CB;
 }
 .btn {
   width: 92%;
