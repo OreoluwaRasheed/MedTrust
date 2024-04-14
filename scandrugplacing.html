@@ -9,7 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>MedTrust Settings </title>
+    <title>MedTrust Scan Home</title>
 </head>
 
 <body>
@@ -39,9 +39,9 @@
                     <!-- <h4>Main Menu</h4> -->
                     <ul>
                         <h4>MAIN MENU</h4>
-                        <li><i class="fa fa-home" aria-hidden="true"></i> <a href="drughome.html">Home</a>
-                        </li>
-                        <li><i class="fa fa-qrcode" aria-hidden="true"></i></i> <a href="scanhome.html">Verify</a>
+                        <li><i class="fa fa-home" aria-hidden="true"></i> <a href="drughome.html">Home</a></li>
+                        <li class="active"><i class="fa fa-qrcode" aria-hidden="true"></i></i> <a
+                                href="scanhome.html">Verify</a>
                         </li>
                         <li><i class="fa fa-bell" aria-hidden="true"></i><a href="notification.html">Notification</a>
                         </li>
@@ -56,8 +56,9 @@
                 <div class="preferences">
                     <ul>
                         <h4>PREFERENCES</h4>
-                        <li class="active"><i class="fa fa-cog" aria-hidden="true"></i> <a href="#">Settings</a></li>
-                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> <a href="#">Help Center</a></li>
+                        <li><i class="fa fa-cog" aria-hidden="true"></i> <a href="settings.html">Settings</a></li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> <a href="help.html">Help Center</a>
+                        </li>
                         <li><i class="fa fa-sign-out" aria-hidden="true"></i></i> <a href="#">Log out</a></li>
 
                     </ul>
@@ -65,34 +66,33 @@
 
             </div>
         </section>
-        <section class="right_container">
-            <section class="home_setting">
+        <section class="right_container ">
+            <section class="home_setting main-list2">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="drughome.html">Home</a></li>
                     <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-                    <li><a href="#">Setting</a></li>
+                    <li><a href="scanhome.html">Verify</a></li>
+                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                    <li><a href="scanactivate.html">Scan</a></li>
                 </ul>
             </section>
-            <h3>Settings</h3>
-            <section class="profile_nav main-list2">
-
-                <div class="tabs">
-                    <p class="active"><a href="#">My Profile</a></p>
-                    <p><a href="#">Theme & Apperance</a></p>
-                    <p><a href="#">Account Setting</a></p>
-                    <p><a href="#">Notification</a></p>
-
-
+            <section class="scan_home ">
+                <div class="main1a-list2">
+                    <h2 class="blogdetails_heading">Scan Here</h2>
                 </div>
-                <h2 class="profile_pic">Customize Theme</h2>
-                <div class="main4-list2">
-                    <!-- <h2>Customize Theme</h2> -->
-                    <div class="main4a-list2">
-                        <input type="radio" name="" id="" checked>System default
-                        <input type="radio" name="" id="">Light theme
-                        <input type="radio" name="" id="">Dark theme
+                <div class="main1b-list2">
+                    <p>Hold your device steady, positioning the camera infont of the QR code on your medication
+                        packaging</p>
+                </div>
+                <div class="scan3-main">
+                    <div class="main1c-list2">
                     </div>
+                    <div class="img">
+                        <img src="./images/scan-image.jpeg" alt="">
+                    </div>
+
                 </div>
+
 
 
             </section>
