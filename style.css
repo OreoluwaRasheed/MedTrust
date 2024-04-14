@@ -186,6 +186,9 @@ a{
 .btn_signin {
   background-color: #00b7cb;
 }
+.btn_container a{
+  color: #1A1A1A;
+}
 /* styling the remember forgot password segment */
 .forms_right_container .remember_forgot {
   display: flex;
@@ -1146,10 +1149,10 @@ div.profile_group select {
   justify-content: space-between;
   align-items: center;
 }
-.double i{
+/* .double i{
   padding: 0;
   margin: 0;
-}
+} */
 /* STYLING THE PHARMACY SECTION */
 .boluke{
   margin: 2rem 0;
