@@ -75,6 +75,30 @@ passwordInp.addEventListener('keyup', () => {
         }
     });
 });
+
+// check confirm password
+function checkPassword(){
+    let password = document.getElementById("password").value;
+    let confirmPassword = document.getElementById("confirm-password").value;
+    console.log(password, confirmPassword)
+
+let messsage = document.getElementById("message");
+
+if (password.length !=0){
+    if (password == confirmPassword){
+        message.textContent = "Password match"
+        message.style.backgroundColor = "#3ae374";
+    }
+    else{
+        message.textContent = "Password doesn't match"
+        message.style.backgroundColor = "#ff4d4d";
+    }
+}
+else{
+    alert("Password can't be empty");
+    messsage.textContent = '';
+}
+}
 // 
 
 // document.addEventListener("DOMContentLoaded", function() {
@@ -90,24 +114,29 @@ passwordInp.addEventListener('keyup', () => {
 // });
 
 // });
-document.addEventListener("DOMContentLoaded", function() {
-    // Verify that the DOMContentLoaded event fires
-    console.log("DOMContentLoaded event fired");
+// document.addEventListener("DOMContentLoaded", function() {
+//     // Verify that the DOMContentLoaded event fires
+//     console.log("DOMContentLoaded event fired");
 
-    // Get the clickable element
-    var clickableElement = document.getElementById("boluke");
-    console.log("boluke:", clickableElement);
+//     // Get the clickable element
+//     var clickableElement = document.getElementById("boluke");
+//     console.log("boluke:", clickableElement);
 
-    // Check if the clickable element exists
-    if (clickableElement) {
-        // Add a click event listener
-        clickableElement.addEventListener("click", function() {
-            console.log("Clickable element clicked");
+//     // Check if the clickable element exists
+//     if (clickableElement) {
+//         // Add a click event listener
+//         clickableElement.addEventListener("click", function() {
+//             console.log("Clickable element clicked");
             
-            // Redirect to another page
-            window.location.href = "another_page.html";
-        });
-    } else {
-        console.log("Element with ID 'clickableElement' not found");
-    }
-});
+//             // Redirect to another page
+//             window.location.href = "another_page.html";
+//         });
+//     } else {
+//         console.log("Element with ID 'clickableElement' not found");
+//     }
+// });
+
+// document.getElementById('boluke').onclick =function(){
+//     window.location.replace('pharmacydetails.html')
+// }
+
