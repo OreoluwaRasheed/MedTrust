@@ -49,7 +49,7 @@ let showConfirmPasswordBtn = document.querySelector("#hide-confirm-password");
 let passwordInp = document.querySelector("#password");
 let confirmPasswordInp = document.querySelector("#confirm-password");
 let passwordChecklistItems = document.querySelectorAll(".list-item");
-showPasswordBtn.addEventListener("click", () => {
+showPasswordBtn?.addEventListener("click", () => {
   // toggle icon
   showPasswordBtn.classList.toggle("fa-eye");
   showPasswordBtn.classList.toggle("fa-eye-slash");
@@ -58,7 +58,7 @@ showPasswordBtn.addEventListener("click", () => {
 });
 
 //same function for password. I did it for confirm password too. Seperate function for the two dfifferent eye icons. Each call their respective functio nand work
-showConfirmPasswordBtn.addEventListener("click", () => {
+showConfirmPasswordBtn?.addEventListener("click", () => {
   // toggle icon
   showConfirmPasswordBtn.classList.toggle("fa-eye");
   showConfirmPasswordBtn.classList.toggle("fa-eye-slash");
@@ -76,7 +76,7 @@ let validationRegex = [
   { regex: /[^A-Za-z0-9]/ }, //special characters
 ];
 
-passwordInp.addEventListener("keyup", () => {
+passwordInp?.addEventListener("keyup", () => {
   //set that all conditions are met initially
   let allValid = true;
   validationRegex.forEach((item, i) => {
@@ -163,36 +163,38 @@ function checkPassword() {
 // })
 
 //STYLING OF THE VERIFICATION PAGE
-const OTPInputs = document.querySelectorAll('input')
-
+const OTPInputs = document.querySelectorAll(".otp-input");
 
 window.onload = () => {
-    alert("Window loaded");
-}
+  alert("Window loaded");
+};
 window.onload = () => {
-    console.log("Window loaded");
-    OTPInputs[0].focus();
-}
+  console.log("Window loaded");
+  OTPInputs[0].focus();
+};
 
-OTPInputs.forEach((input)=>{
-  input.addEventListener('input',()=>{
+OTPInputs.forEach((input) => {
+  input.addEventListener("input", () => {
     console.log("Input event fired");
-    const currentInput = input
+    const currentInput = input;
     console.log("Current input:", currentInput.value);
-    const nextInput = currentInput.nextElementSibling
+    const nextInput = currentInput.nextElementSibling;
 
-    if(currentInput.value.length >= 2 && currentInput.value.length == 2){
+    if (currentInput.value.length >= 2 && currentInput.value.length == 2) {
       currentInput.value = ""; // Clear current input if it reaches maximum length
       console.log("Current input cleared");
     }
-    if(nextInput !== null && !nextInput.hasAttribute('disabled') && currentInput.value !== ""){
-      nextInput.removeAttribute('disabled');
+    if (
+      nextInput !== null &&
+      nextInput.hasAttribute("disabled") &&
+      currentInput.value !== ""
+    ) {
+      nextInput.removeAttribute("disabled");
       nextInput.focus();
       console.log("Next input enabled and focused");
     }
-  })
-})
-
+  });
+});
 
 // document.addEventListener("DOMContentLoaded", function() {
 //     // Your code here

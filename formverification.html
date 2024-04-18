@@ -1,82 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/eaf93db9ac.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>MedTrust Register Page</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/eaf93db9ac.js" crossorigin="anonymous"></script>
-  <title>MedTrust Register Page</title>
-</head>
-
-<body>
-  <div class="body_container">
-    <div class="form_container">
-      <div class="left_container">
-        <div class="left_container_text">
-          <h2>Welcome to MedTrust</h2>
-          <p>
-            Ensuring Patient Safety with Our Medication Authentication
-            Platform
-          </p>
-          <!-- <img src="images/rightsidebackground.png" alt=""> -->
+  <body>
+    <div class="body_container">
+      <div class="form_container">
+        <div class="left_container">
+          <div class="left_container_text">
+            <h2>Welcome to MedTrust</h2>
+            <p>
+              Ensuring Patient Safety with Our Medication Authentication
+              Platform
+            </p>
+            <!-- <img src="images/rightsidebackground.png" alt=""> -->
+          </div>
         </div>
-      </div>
-      <div class="forms_right_container-start">
-        <div class="verification-content">
-          <div class="top_nav">
-            <div class="back">
-              <i class="fa fa-angle-left"></i><span>Back</span>
-            </div>
-            <!-- <div class="skip">
+        <div class="forms_right_container-start">
+          <div class="verification-content">
+            <div class="top_nav">
+              <div class="back">
+                <i class="fa fa-angle-left"></i><span>Back</span>
+              </div>
+              <!-- <div class="skip">
               <span class="topnav_item">Skip</span>
               <i class="fa-solid fa-caret-right"></i>
             </div> -->
-          </div>
-          <h1>Verification</h1>
-
-          <div class="line-container">
-            <div class="line">
-              <div id="line1" class="coloured"></div>
-              <div id="line2" class="coloured"></div>
-              <div id="line3"></div>
-              <div id="line4"></div>
             </div>
-            <h4>2/4</h4>
-          </div>
+            <h1>Verification</h1>
 
-          <div class="verify-number">
-            <h3>EMAIL VERIFICATION</h3>
-            <form action="/verify" method="POST">
-              <div class="verify-num">
-                <input type="number" class="num1" />
-                <input type="number" class="num2" disabled />
-                <input type="number" class="num3" disabled />
-                <input type="number" class="num4" disabled />
-                <input type="number" class="num5" disabled />
-                <input type="number" class="num6" disabled />
-                <!-- <div class="num1"></div>
+            <div class="line-container">
+              <div class="line">
+                <div id="line1" class="coloured"></div>
+                <div id="line2" class="coloured"></div>
+                <div id="line3"></div>
+                <div id="line4"></div>
+              </div>
+              <h4>2/4</h4>
+            </div>
+
+            <div class="verify-number">
+              <h3>EMAIL VERIFICATION</h3>
+              <form action="/verify" method="POST">
+                <div class="verify-num">
+                  <input type="number" class="num1 otp-input" />
+                  <input type="number" class="num2 otp-input" disabled />
+                  <input type="number" class="num3 otp-input" disabled />
+                  <input type="number" class="num4 otp-input" disabled />
+                  <input type="number" class="num5 otp-input" disabled />
+                  <input type="number" class="num6 otp-input" disabled />
+                  <!-- <div class="num1"></div>
                 <div class="num2"></div>
                 <div class="num3"></div>
                 <div class="num4"></div>
                 <div class="num4"></div><div class="num5"></div>
                 <div class="num6"></div> -->
-              </div>
-            </form>
+                </div>
+              </form>
 
-            <h4>02:20</h4>
-            <h5>Didn't get OTP? <a href="">Resend OTP</a></h5>
+              <h4>02:20</h4>
+              <h5>Didn't get OTP? <a href="">Resend OTP</a></h5>
+            </div>
           </div>
-
         </div>
       </div>
     </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
