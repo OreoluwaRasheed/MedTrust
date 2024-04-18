@@ -5777,8 +5777,14 @@ font-weight: 400;
    border: none;
    background: #E8E8E8;
    font-family: Montserrat;
-   font-size: 1rem;     line-height: 1.22rem;
+   font-size: 1rem;   
+     line-height: 1.22rem;
+     color: #1A1A1A;
 }
 .logout-button a:hover{
+  background: #00B7CB;
+}
+.logout-button a:focus{
+  color:#1A1A1A;
   background: #00B7CB;
 }
