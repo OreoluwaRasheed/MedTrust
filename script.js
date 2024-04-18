@@ -162,6 +162,7 @@ function checkPassword() {
 //   })
 // })
 
+//STYLING OF THE VERIFICATION PAGE
 const OTPInputs = document.querySelectorAll('input')
 
 
