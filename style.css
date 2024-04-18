@@ -5725,3 +5725,60 @@ padding: 2.5rem;
    color: #5EA5D9;
 
 }
+/* Logout page */
+.logout-container{
+  background-color: #1A1A1A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.logout-subcontainer{
+  width: 50%;
+  height: 50%;
+ 
+}
+.logout-text{
+  border-radius: 16px;
+  height: 18rem;
+  width: 30rem;
+  background-color: white;
+  position: relative;
+  top: 1.5rem;
+  left: 6rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.logout-text h1{
+  position: relative;
+  top: 4rem;
+  width: 18rem;
+  left: 5rem;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+font-weight: 400;
+ line-height: 1.22rem;
+ text-align: center;
+}
+.logout-button{
+  position: relative;
+  top: 8rem;
+  display: flex;
+  gap: 0.63rem;
+  justify-content: center;
+}
+.logout-button a{
+  width: 11rem;
+  height:  3rem;
+   padding: 8px 0px 0px 0px;
+   border-radius:0.5rem ;
+   border: none;
+   background: #E8E8E8;
+   font-family: Montserrat;
+   font-size: 1rem;     line-height: 1.22rem;
+}
+.logout-button a:hover{
+  background: #00B7CB;
+}
