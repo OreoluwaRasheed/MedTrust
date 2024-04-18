@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>MedTrust Scan Home</title>
+</head>
+
+<body>
+    <header>
+        <nav class="snav_bar">
+            <div class="logo">
+                <img src="./images/MedTrustlogo_withtext.png" alt="logo">
+            </div>
+            <div class="right_nav">
+                <div class="nav_search">
+                    <form action="">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <input type="text" name="" id="search" placeholder="     Search...">
+                    </form>
+                </div>
+                <div class="notify">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                </div>
+                <div class="profile_icon"><img src="images/profile_icon.png" alt="profile icon"></div>
+            </div>
+        </nav>
+    </header>
+    <section class="container_content">
+        <section class="side_nav">
+            <div class="inner_sidenav">
+                <div class="main_menu">
+                    <!-- <h4>Main Menu</h4> -->
+                    <ul>
+                        <li class="not-link">MAIN MENU</li>
+                        <li class="active"><i class="fa fa-home" aria-hidden="true"></i> <a
+                                href="drughome.html">Home</a></li>
+                        <!-- <li><i class="fa fa-search" aria-hidden="true"></i> <a href="#">Search</a></li> -->
+                        <li><i class="fa fa-qrcode" aria-hidden="true"></i></i> <a href="scanhome.html">Verify</a></li>
+                        <li><i class="fa fa-bell" aria-hidden="true"></i><a href="notification.html">Notification</a>
+                        </li>
+                        <li><i class="fa fa-newspaper-o" aria-hidden="true"></i></i> <a href="blogpost.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="divide"></div>
+            <div class="inner_sidenav">
+                <div class="preferences">
+                    <ul>
+                        <li class="not-link">PREFERENCES</li>
+                        <li c><i class="fa fa-cog" aria-hidden="true"></i> <a href="settings.html">Settings</a></li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> <a href="helpcenter.html">Help
+                                Center</a></li>
+                        <li><i class="fa fa-sign-out" aria-hidden="true"></i></i> <a href="logout.html">Log out</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </section>
+    <section class="right_container">
+        <section class="home_setting">
+            <ul>
+                <li><a href="drughome.html">Home</a></li>
+                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                <li><a href="scanhome.html">Verify</a></li>
+            </ul>
+        </section>
+        <section class="scan_home">
+            <h2 class="blogdetails_heading">Enter Drug Information</h2>
+            <form action="/signin" method="get">
+                <div class="input_group scan_group">
+
+                    <div class="input_field input_password scan_code">
+                        <label for="drug">Drug Brand Name</label>
+                        <input type="text" placeholder="Enter The Name Of The Drug" name="drug" id="password" required>
+
+
+                    </div>
+                    <div class="input_field input_password scan_code">
+                        <label for="code">Drug Batch Number</label>
+                        <input type="text" placeholder="Enter The Back Number" name="code" id="code" required>
+
+
+                    </div>
+                </div>
+
+                <div class="btn_container scan_code ">
+                    <button class="btn_signin btn" type="submit">Enter</button>
+                </div>
+
+
+            </form>
+        </section>
+
+    </section>
+
+
+    </section>
+
+
+</body>
+
+</html>

@@ -141,7 +141,57 @@ function checkPassword() {
   }
   return false;
 }
-//
+//STYLING OF THE VERIFICATION PAGE
+// const OTPInputs = document.querySelectorAll('input')
+
+// window.onload = () => OTPInputs[0].focus()
+
+// OTPInputs.forEach((input)=>{
+//   input.addEventListener('input',()=>{
+//     const currentInput = input
+//     const nextInput = currentInput.
+//     nextElementSibling
+
+//     // if(currentInput.value.length > && curremtInput.value.length ==2){
+//     //   currentInput.value = ""
+//     // }
+//     if(nextInput !== null && nextInput.hasAttribute('disabled')&& currentInput.value !== ""){
+//       nextInput.removeAttribute('disabled')
+//       nextInput.focus()
+//     }
+//   })
+// })
+
+const OTPInputs = document.querySelectorAll('input')
+
+
+window.onload = () => {
+    alert("Window loaded");
+}
+window.onload = () => {
+    console.log("Window loaded");
+    OTPInputs[0].focus();
+}
+
+OTPInputs.forEach((input)=>{
+  input.addEventListener('input',()=>{
+    console.log("Input event fired");
+    const currentInput = input
+    console.log("Current input:", currentInput.value);
+    const nextInput = currentInput.nextElementSibling
+
+    if(currentInput.value.length >= 2 && currentInput.value.length == 2){
+      currentInput.value = ""; // Clear current input if it reaches maximum length
+      console.log("Current input cleared");
+    }
+    if(nextInput !== null && !nextInput.hasAttribute('disabled') && currentInput.value !== ""){
+      nextInput.removeAttribute('disabled');
+      nextInput.focus();
+      console.log("Next input enabled and focused");
+    }
+  })
+})
+
 
 // document.addEventListener("DOMContentLoaded", function() {
 //     // Your code here
