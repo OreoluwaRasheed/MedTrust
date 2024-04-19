@@ -308,7 +308,13 @@ a{
 .coloured {
   background-color: #00b7cb !important;
 }
-
+#message{
+  font-size: 14px;
+  margin: 5px 0;
+  display: inline-block;
+  color: #fff;
+  /* padding: 5px 20px; */
+}
 /* Profile Page */
 .top_nav {
   display: flex;

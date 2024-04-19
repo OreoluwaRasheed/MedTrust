@@ -134,6 +134,31 @@ OTPInputs.forEach((input) => {
   });
 });
 
+// check confirm password
+function checkPassword(){
+    let password = document.getElementById("password").value;
+    let confirmPassword = document.getElementById("confirm-password").value;
+    console.log(password, confirmPassword)
+
+let messsage = document.getElementById("message");
+
+if (password.length !=0){
+    if (password == confirmPassword){
+        message.textContent = "Password match"
+        message.style.backgroundColor = "#3ae374";
+    }
+    else{
+        message.textContent = "Password doesn't match"
+        message.style.backgroundColor = "#ff4d4d";
+    }
+}
+else{
+    alert("Password can't be empty");
+    messsage.textContent = '';
+}
+}
+// 
+
 // document.addEventListener("DOMContentLoaded", function() {
 //     // Your code here
 //     // Get the clickable element
@@ -160,7 +185,7 @@ OTPInputs.forEach((input) => {
 //         // Add a click event listener
 //         clickableElement.addEventListener("click", function() {
 //             console.log("Clickable element clicked");
-
+            
 //             // Redirect to another page
 //             window.location.href = "another_page.html";
 //         });

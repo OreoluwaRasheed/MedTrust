@@ -77,11 +77,12 @@
                 </div>
               </div>
               <div class="input_field input_password">
-                <label for="password">Confirm Your Password</label>
-                <input type="password" placeholder="Enter password" name="password" id="password" minlength="8"
+                <label for="confirm-password">Confirm Your Password</label>
+                <input type="password" placeholder="Enter password" name="password" id="confirm-password" minlength="8"
                   maxlength="64" required />
                 <i class="fa fa-eye-slash" id="hide-password"></i>
               </div>
+              <p id="message"></p>
               <!-- <div class="dropdown">
                             <label for="profession">Profession</label>
                             <input type="text" placeholder="Select">
@@ -94,7 +95,7 @@
                         </div> -->
               <div class="input_field input_field2">
                 <label for="role">Role</label>
-                <select name="" id="role">
+                <select name="" id="role" required>
                   <option value="" disabled selected>Select</option>
                   <option value="">Health Professional</option>
                   <option value="">Health Insurance Personnel</option>
@@ -104,7 +105,8 @@
               </div>
             </div>
             <div class="btn_container">
-              <button class="btn_signin btn" type="submit"><a href="formverification.html">Register</a></button>
+              <button class="btn_signin btn" type="submit" onclick="checkPassword()"><a
+                  href="formverification.html">Register</a></button>
               <!-- <button class="btn"type="submit">Sign in with google</button> -->
             </div>
             <!-- <div class="remember_forgot">
