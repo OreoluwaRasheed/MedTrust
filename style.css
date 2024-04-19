@@ -1168,7 +1168,7 @@ div.profile_group select {
   font-size: 26px;
   margin-top: 1rem;
 }
-.home_info span {
+.home_info span  a {
   color: #00b7cb;
 }
 .home_details {
