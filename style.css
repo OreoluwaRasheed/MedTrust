@@ -584,9 +584,7 @@ form input {
   font-size: 16px;
 }
 
-/* .intro_buttons {
-  padding: 0 0 0 1rem;
-} */
+
 .intro_btn {
   display: inline-block;
   padding: 10px 20px;
@@ -1150,10 +1148,7 @@ li:hover a {
   border-radius: 10px;
   width: 60%;
   background-color: #afb1b6;
-  /* background: #AFB1B6;
-    height: 1px;
-    width: 100vw;
-} */
+ 
 }
 
 .tabs {
@@ -1177,12 +1172,8 @@ li:hover a {
 }
 .profile_pic {
   color: #242424;
-  /* padding: 20px; */
-  /* font-family: Montserrat; */
   font-size: 22px;
-  /* font-style: normal; */
   font-weight: 500;
-  /* line-height: normal; */
   margin: 2rem 2rem 2rem 0;
 }
 .profile_img {
@@ -1211,8 +1202,6 @@ li:hover a {
   justify-content: center;
   align-items: center;
   padding: 0.8rem 2.8rem;
-  /* border: none;
-  outline: none; */
   background: transparent;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -1282,7 +1271,6 @@ div.profile_group select {
 .home_details {
   flex: 0 0 calc(33.33% - 20px); /* 20px for margins */
   margin: 10px; /* Add some spacing between cards */
-  /* border: 1px solid #ccc; */
 
   box-sizing: border-box;
 }
@@ -1423,9 +1411,7 @@ div.profile_group select {
 /* SCAN CODE PAGE */
 .right_container .scan_group {
   display: flex;
-  /* flex-direction: column;
-  justify-content: center;
-  align-items: center; */
+
 }
 .scan_code {
   width: 45%;
@@ -1652,8 +1638,7 @@ div.profile_group select {
   position: absolute;
   top: 15rem;
   left: 18rem;
-  /* height: 210px;
-  width: 297.8px; */
+ 
   border-radius: 16px;
 }
 /* Scan4 page(border section) */
