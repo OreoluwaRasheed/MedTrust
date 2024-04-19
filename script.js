@@ -1,4 +1,47 @@
-// Password Toggler
+//  password toggler
+// const showPassword = document.querySelector('#hide-password');
+// const passwordField = document.querySelector('#password');
+
+// showPassword.addEventListener('click', function(){
+//     this.classList.toggle("fa-eye");
+//     const type = passwordField.getAttribute('type')=== 'password' ? 'text': 'password'
+//     passwordField.setAttribute('type',type)
+// })
+
+// other option
+// let showPasswordBtn = document.querySelector('#hide-password')
+// let passwordInp = document.querySelector('#password')
+// let passwordChecklist = document.querySelector('.list-item');
+
+// showPasswordBtn.addEventListener('click', ()=>{
+//     // toggle icon
+//     showPasswordBtn.classList.toggle('fa-eye');
+//     showPasswordBtn.classList.toggle('fa-eye-slash');
+
+//     passwordInp.type = passwordInp.type === 'password' ? 'text' : 'password'
+// })
+
+// //  string password validation
+// let validationRegex = [
+//     { regex: /.{8,}/}, //minimum of 8 characters
+//     { regex: /[0-9]/}, //numbers from 0-9
+//     { regex: /[a-z]/}, //letters from a-z (lowercase)
+//     { regex: /[A-Z]/}, //letters from A-Z (uppercase)
+//     { regex: /[^A-Za-z0-9]/} //special characters
+//  ]
+
+//  passwordInp.addEventListener('keyup', ()=>{
+//     validationRegex.forEach((item,  i) => {
+//         let isValid = item.regex.test(passwordInp.value);
+//         if(isValid){
+//             passwordChecklist[i].classList.add("checked")
+//         }
+//         else{
+//             passwordChecklist[i].classList.remove("checked")
+//         }
+
+//     })
+//  })
 
 let showPasswordBtn = document.querySelector("#hide-password");
 let showConfirmPasswordBtn = document.querySelector("#hide-confirm-password");
@@ -14,7 +57,7 @@ showPasswordBtn?.addEventListener("click", () => {
   passwordInp.type = passwordInp.type === "password" ? "text" : "password";
 });
 
-//same function for password. 
+//same function for password. I did it for confirm password too. Seperate function for the two dfifferent eye icons. Each call their respective functio nand work
 showConfirmPasswordBtn?.addEventListener("click", () => {
   // toggle icon
   showConfirmPasswordBtn.classList.toggle("fa-eye");
@@ -98,7 +141,26 @@ function checkPassword() {
   }
   return false;
 }
+//STYLING OF THE VERIFICATION PAGE
+// const OTPInputs = document.querySelectorAll('input')
 
+// window.onload = () => OTPInputs[0].focus()
+
+// OTPInputs.forEach((input)=>{
+//   input.addEventListener('input',()=>{
+//     const currentInput = input
+//     const nextInput = currentInput.
+//     nextElementSibling
+
+//     // if(currentInput.value.length > && curremtInput.value.length ==2){
+//     //   currentInput.value = ""
+//     // }
+//     if(nextInput !== null && nextInput.hasAttribute('disabled')&& currentInput.value !== ""){
+//       nextInput.removeAttribute('disabled')
+//       nextInput.focus()
+//     }
+//   })
+// })
 
 //STYLING OF THE VERIFICATION PAGE
 const OTPInputs = document.querySelectorAll(".otp-input");
@@ -134,31 +196,6 @@ OTPInputs.forEach((input) => {
   });
 });
 
-// check confirm password
-function checkPassword(){
-    let password = document.getElementById("password").value;
-    let confirmPassword = document.getElementById("confirm-password").value;
-    console.log(password, confirmPassword)
-
-let messsage = document.getElementById("message");
-
-if (password.length !=0){
-    if (password == confirmPassword){
-        message.textContent = "Password match"
-        message.style.backgroundColor = "#3ae374";
-    }
-    else{
-        message.textContent = "Password doesn't match"
-        message.style.backgroundColor = "#ff4d4d";
-    }
-}
-else{
-    alert("Password can't be empty");
-    messsage.textContent = '';
-}
-}
-// 
-
 // document.addEventListener("DOMContentLoaded", function() {
 //     // Your code here
 //     // Get the clickable element
@@ -185,7 +222,7 @@ else{
 //         // Add a click event listener
 //         clickableElement.addEventListener("click", function() {
 //             console.log("Clickable element clicked");
-            
+
 //             // Redirect to another page
 //             window.location.href = "another_page.html";
 //         });
