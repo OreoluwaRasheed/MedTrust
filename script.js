@@ -1,4 +1,47 @@
-// Password Toggler
+//  password toggler
+// const showPassword = document.querySelector('#hide-password');
+// const passwordField = document.querySelector('#password');
+
+// showPassword.addEventListener('click', function(){
+//     this.classList.toggle("fa-eye");
+//     const type = passwordField.getAttribute('type')=== 'password' ? 'text': 'password'
+//     passwordField.setAttribute('type',type)
+// })
+
+// other option
+// let showPasswordBtn = document.querySelector('#hide-password')
+// let passwordInp = document.querySelector('#password')
+// let passwordChecklist = document.querySelector('.list-item');
+
+// showPasswordBtn.addEventListener('click', ()=>{
+//     // toggle icon
+//     showPasswordBtn.classList.toggle('fa-eye');
+//     showPasswordBtn.classList.toggle('fa-eye-slash');
+
+//     passwordInp.type = passwordInp.type === 'password' ? 'text' : 'password'
+// })
+
+// //  string password validation
+// let validationRegex = [
+//     { regex: /.{8,}/}, //minimum of 8 characters
+//     { regex: /[0-9]/}, //numbers from 0-9
+//     { regex: /[a-z]/}, //letters from a-z (lowercase)
+//     { regex: /[A-Z]/}, //letters from A-Z (uppercase)
+//     { regex: /[^A-Za-z0-9]/} //special characters
+//  ]
+
+//  passwordInp.addEventListener('keyup', ()=>{
+//     validationRegex.forEach((item,  i) => {
+//         let isValid = item.regex.test(passwordInp.value);
+//         if(isValid){
+//             passwordChecklist[i].classList.add("checked")
+//         }
+//         else{
+//             passwordChecklist[i].classList.remove("checked")
+//         }
+
+//     })
+//  })
 
 let showPasswordBtn = document.querySelector("#hide-password");
 let showConfirmPasswordBtn = document.querySelector("#hide-confirm-password");
@@ -14,7 +57,7 @@ showPasswordBtn?.addEventListener("click", () => {
   passwordInp.type = passwordInp.type === "password" ? "text" : "password";
 });
 
-//same function for password.
+//same function for password. I did it for confirm password too. Seperate function for the two dfifferent eye icons. Each call their respective functio nand work
 showConfirmPasswordBtn?.addEventListener("click", () => {
   // toggle icon
   showConfirmPasswordBtn.classList.toggle("fa-eye");
@@ -40,9 +83,9 @@ passwordInp?.addEventListener("keyup", () => {
     let isValid = item.regex.test(passwordInp.value);
 
     if (isValid) {
-      passwordChecklistItems[i]?.classList.add("checked");
+      passwordChecklistItems[i].classList.add("checked");
     } else {
-      passwordChecklistItems[i]?.classList.remove("checked");
+      passwordChecklistItems[i].classList.remove("checked");
       //set that all conditions are not met because at least one is not true
       allValid = false;
     }
@@ -50,14 +93,12 @@ passwordInp?.addEventListener("keyup", () => {
   //find the div that contains the entire popup
   const passwordDiv = document.querySelector(".password_checklist");
 
-  if (passwordDiv) {
-    if (allValid) {
-      //hide it if all conditions are met
-      passwordDiv.style.display = "none";
-    } else {
-      //display it if there is a condition that isn't met
-      passwordDiv.style.display = "block";
-    }
+  if (allValid) {
+    //hide it if all conditions are met
+    passwordDiv.style.display = "none";
+  } else {
+    //display it if there is a condition that isn't met
+    passwordDiv.style.display = "block";
   }
 });
 
@@ -85,18 +126,6 @@ function checkPassword() {
     return false;
   }
 
-  // Check password
-  if (
-    password.length < 8 ||
-    !/\d/.test(password) ||
-    !/[a-z]/.test(password) ||
-    !/[A-Z]/.test(password) ||
-    !/[^a-zA-Z0-9]/.test(password)
-  ) {
-    alert("Please enter a valid password");
-    return false;
-  }
-
   if (password.length != 0) {
     if (password == confirmPassword) {
       message.textContent = "Password match";
@@ -112,6 +141,26 @@ function checkPassword() {
   }
   return false;
 }
+//STYLING OF THE VERIFICATION PAGE
+// const OTPInputs = document.querySelectorAll('input')
+
+// window.onload = () => OTPInputs[0].focus()
+
+// OTPInputs.forEach((input)=>{
+//   input.addEventListener('input',()=>{
+//     const currentInput = input
+//     const nextInput = currentInput.
+//     nextElementSibling
+
+//     // if(currentInput.value.length > && curremtInput.value.length ==2){
+//     //   currentInput.value = ""
+//     // }
+//     if(nextInput !== null && nextInput.hasAttribute('disabled')&& currentInput.value !== ""){
+//       nextInput.removeAttribute('disabled')
+//       nextInput.focus()
+//     }
+//   })
+// })
 
 //STYLING OF THE VERIFICATION PAGE
 const OTPInputs = document.querySelectorAll(".otp-input");
@@ -121,7 +170,7 @@ window.onload = () => {
 };
 window.onload = () => {
   console.log("Window loaded");
-  OTPInputs[0]?.focus();
+  OTPInputs[0].focus();
 };
 
 OTPInputs.forEach((input) => {
@@ -144,9 +193,44 @@ OTPInputs.forEach((input) => {
       nextInput.focus();
       console.log("Next input enabled and focused");
     }
-
-    if (nextInput === null) {
-      window.location.href = "formprofile.html";
-    }
   });
 });
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     // Your code here
+//     // Get the clickable element
+// let clickableElement = document.getElementById("boluke");
+// console.log(clickableElement);
+
+// // Add a click event listener
+// clickableElement.addEventListener("click", function() {
+//     // Redirect to another page
+//     window.location.href = "pharmacydetails.html";
+// });
+
+// });
+// document.addEventListener("DOMContentLoaded", function() {
+//     // Verify that the DOMContentLoaded event fires
+//     console.log("DOMContentLoaded event fired");
+
+//     // Get the clickable element
+//     var clickableElement = document.getElementById("boluke");
+//     console.log("boluke:", clickableElement);
+
+//     // Check if the clickable element exists
+//     if (clickableElement) {
+//         // Add a click event listener
+//         clickableElement.addEventListener("click", function() {
+//             console.log("Clickable element clicked");
+
+//             // Redirect to another page
+//             window.location.href = "another_page.html";
+//         });
+//     } else {
+//         console.log("Element with ID 'clickableElement' not found");
+//     }
+// });
+
+// document.getElementById('boluke').onclick =function(){
+//     window.location.replace('pharmacydetails.html')
+// }
