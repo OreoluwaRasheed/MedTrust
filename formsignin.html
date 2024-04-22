@@ -29,7 +29,7 @@
       <div class="forms_right_container">
         <div class="content">
           <h1>Sign In</h1>
-          <form  method="POST" id="login-form">
+          <form method="POST" id="login-form">
             <div class="input_group">
               <div class="input_field">
                 <label for="user">Email/Username</label>
@@ -48,7 +48,7 @@
             </div>
             <div class="btn_container">
               <button class="btn_signin btn" id="signin-button">Sign In</button>
-              <button class="btn" >Sign in with google</button>
+              <button class="btn"><a href="drughome.html">Sign in with google</a></button>
             </div>
 
             <div class="register_link">
@@ -80,7 +80,7 @@
   </script>
   <script>
 
-document.getElementById("signin-button").addEventListener("click", function (event) {
+    document.getElementById("signin-button").addEventListener("click", function (event) {
       event.preventDefault();
       const email = document.getElementById("email").value;
       const password = document.getElementById("password").value;
@@ -93,7 +93,7 @@ document.getElementById("signin-button").addEventListener("click", function (eve
         .catch(function (error) {
           console.error(error.message);
           // Redirect to sign-up page if sign-in fails
-        alert('Wrong username or password, register if you do not have an account')
+          alert('Wrong username or password, register if you do not have an account')
         });
     });
   </script>
