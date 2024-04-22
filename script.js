@@ -1,5 +1,3 @@
-
-
 //  password toggler
 // const showPassword = document.querySelector('#hide-password');
 // const passwordField = document.querySelector('#password');
@@ -143,7 +141,6 @@ function checkPassword() {
   }
   return false;
 }
-
 //STYLING OF THE VERIFICATION PAGE
 // const OTPInputs = document.querySelectorAll('input')
 
@@ -198,7 +195,6 @@ OTPInputs.forEach((input) => {
     }
   });
 });
-
 
 // document.addEventListener("DOMContentLoaded", function() {
 //     // Your code here
