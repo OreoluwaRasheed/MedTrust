@@ -93,5 +93,25 @@
   </div>
 </body>
 <script src="https://kit.fontawesome.com/eaf93db9ac.js" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      var backButton = document.querySelector(".back a");
+      var skipButton = document.querySelector(".skip a");
+      
+      if (backButton) {
+          backButton.addEventListener("click", function(event) {
+              event.preventDefault(); // Prevent default link behavior
+              window.location.href = 'formverification.html'; // Redirect to formprofile.html
+          });
+      }
+      
+      if (skipButton) {
+          skipButton.addEventListener("click", function(event) {
+              event.preventDefault(); // Prevent default link behavior
+              window.location.href = 'formexplore.html'; // Redirect to settings.html
+          });
+      }
+  });
+</script>
 
 </html>
