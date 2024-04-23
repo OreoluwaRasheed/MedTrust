@@ -9,7 +9,6 @@ body {
 }
 a {
   text-decoration: none;
-  /* background: #1A1A1A; */
 }
 .body_container {
   display: flex;
@@ -47,7 +46,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* width: 100%; */
   padding: 4rem 5rem;
   background: #fbfbfb;
   overflow: auto;
@@ -115,7 +113,6 @@ form input {
   border: none; /* Remove default input border */
   outline: #5dc2ea; /* Remove default input outline */
   padding: 8px;
-  /* width: 200px; */
   box-sizing: border-box;
 }
 
@@ -147,7 +144,6 @@ form input {
 .input_group {
   display: flex;
   flex-direction: column;
-  /* align-items: left; */
   padding: 1rem;
 }
 .input_group label {
@@ -187,7 +183,6 @@ form input {
   right: 10px;
   top: 60%;
   cursor: pointer;
-  /* transform: translate(-50%); */
   font-size: 20px;
 }
 .password_checklist {
@@ -276,7 +271,6 @@ form input {
   color: #00b7cb;
   accent-color: #00b7cb;
   margin-right: 3px;
-  /* width: 100%; */
 }
 
 .remember_forgot a {
@@ -338,7 +332,6 @@ form input {
   margin: 5px 0;
   display: inline-block;
   color: #fff;
-  /* padding: 5px 20px; */
 }
 /* Profile Page */
 .top_nav {
@@ -351,9 +344,7 @@ form input {
   text-decoration: none;
   color: #1a1a1a;
 }
-/* .top_nav i{
-  font-size: 24px;
-} */
+
 .right_container .customise {
   font-size: 48px;
   color: #4e4f51;
@@ -367,7 +358,6 @@ form input {
   display: flex;
   justify-content: center;
   margin: 1.5rem 0;
-  /* align-items: center; */
 }
 .profile_icon {
   width: 100px;
@@ -451,7 +441,7 @@ form input {
 }
 .lnav_bar ul {
   display: flex;
-  /* justify-content: space-around; */
+
 }
 .lnav_bar li {
   list-style: none;
@@ -603,10 +593,7 @@ form input {
 /* RESPONSIVENESS  */
 /* TABLET */
 @media screen and (max-width: 800px) {
-  /* .container{
-      display: flex;
-      width: min-content;
-    } */
+
   .box {
     padding: 15px;
   }
@@ -892,7 +879,6 @@ form input {
 /* Footer styling */
 .footer_medtrust {
   display: flex;
-  /* justify-content: space-around; */
   background: #242424;
 }
 footer h4,
@@ -939,9 +925,7 @@ footer h5 {
 .medtrust li:hover a {
   color: #00b7cb;
 }
-/* .medtrust_start{
-  margin: 0 7rem 0 0;
-} */
+
 /* RESPONSIVENESS */
 /* TABLET */
 @media screen and (max-width: 800px) {
@@ -970,8 +954,7 @@ footer h5 {
   overflow: hidden;
 }
 .nav_search form {
-  /* width: 100%; */
-  /* padding: 14px 16px; */
+
   border-radius: 5px;
   margin: 0 16px;
 }
@@ -1017,7 +1000,7 @@ footer h5 {
   height: 50px;
   width: 50px;
   margin: 0 24px;
-  /* padding: 12px; */
+
 }
 .notify i {
   display: flex;
@@ -1034,14 +1017,12 @@ footer h5 {
   height: 50px;
   flex-shrink: 0;
   margin: 0 24px;
-  /* width: 100%; */
+
 }
 /*  NAVIGATION */
 .side_nav {
   background-image: url("./images/coloured_side_nav.png");
-  /* transform: rotate(90deg); */
   width: 14rem;
-  /* height: 57rem; */
   flex-shrink: 0;
 }
 .inner_sidenav {
@@ -1129,9 +1110,7 @@ li:hover a {
   padding: 2rem 0;
 }
 
-/* .blog_info_details {
- 
-} */
+
 /* PROFILE NAVIGATION */
 .tabs {
   display: flex;
@@ -1142,7 +1121,6 @@ li:hover a {
 }
 
 .line {
-  /* display: flex; */
   height: 5px;
   border-radius: 10px;
   width: 60%;
@@ -1225,7 +1203,6 @@ div.profile_group {
   flex-direction: row;
   justify-content: space-between;
   gap: 40px;
-  /* flex-grow: 1; */
 }
 div.profile_group input,
 div.profile_group select {
@@ -1244,7 +1221,6 @@ div.profile_group select {
 }
 .btn_save a {
   width: 180px;
-  /* height: 32px; */
   border-radius: 8px;
   padding: 1rem 2rem;
 }
@@ -1375,13 +1351,12 @@ div.profile_group select {
 }
 .blog_details p {
   margin: 1rem 0 1rem 0;
-  /* width: 100vw; */
+
 }
 /* SCANNING SECTION */
 /* scan homepage */
 .scan_types {
   display: flex;
-  /* justify-content: space-between; */
   margin: 3rem 0;
 }
 .quick_scan,
@@ -1620,8 +1595,7 @@ div.profile_group select {
 
 .scan3-main .img {
   position: absolute;
-  /* bottom: 280px;
-  left: 300px; */
+ 
 }
 .scan3-main .img img {
   position: absolute;
@@ -2119,7 +2093,6 @@ div.profile_group select {
 .scan6-main .menu-list2 {
   padding: 20px;
   position: relative;
-  /* bottom: 200px; */
 }
 .scan6-main .menu2-list2 h4 {
   margin-bottom: 10px;
@@ -2158,7 +2131,7 @@ div.profile_group select {
   width: 267px;
   border: 1px solid #c9f3fb;
   position: relative;
-  /* bottom: 100px; */
+
 }
 
 .scan6-main .main1-list2 a {
